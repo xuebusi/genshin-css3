@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>原神</title>
+    <style>
+        /* 重置样式 */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        /* 背景 */
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+            background-color: rgb(9, 80, 139);
+            background-image: url(./images/mengde.jpg);
+            background-size: cover;
+        }
+
+        /* 头部 */
+        header {
+            display: flex;
+            justify-content: flex-start;
+            background-color: rgba(25, 7, 7, 0.7);
+        }
+
+        .header-nav {
+            display: flex;
+            align-items: center;
+        }
+
+        .header-nav li {
+            margin: 0 24px;
+            /* letter-spacing: 8px; */
+        }
+
+        .header-nav li a {
+            text-align: center;
+            font-size: 17px;
+            color: #ccc;
+            line-height: 62px;
+        }
+
+        .header-nav li:hover {
+            text-shadow: 0 0 12px #69E0FF;
+            border-bottom: 4px solid #69E0FF;
+            transition: 0.25s;
+            cursor: pointer;
+        }
+
+        .header-nav li:hover a {
+            color: white;
+        }
+
+        /* 内容区 */
+        .main-content {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            width: 1000px;
+            height: calc(100vh - 66px);
+            margin: auto;
+        }
+
+        .main-content .item {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            padding: 20px;
+            width: 120px;
+            height: 180px;
+            background-color: rgba(0, 0, 0, 0.25);
+            border-radius: 10px;
+        }
+
+        .main-content .item:hover {
+            box-shadow: 0 0 15px white;
+            transition: 0.25s;
+            cursor: pointer;
+        }
+
+        .main-content .item:hover img {
+            transition: 0.25s;
+            transform: scale(1.6);
+        }
+
+        .main-content .item img {
+            width: 200px;
+            border-radius: 50%;
+        }
+
+        .main-content .item span {
+            color: white;
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="./images/logo.png" alt="logo">
+        <ul class="header-nav">
+            <li><a href="#">首 页</a></li>
+            <li><a href="#">新 闻</a></li>
+            <li><a href="#">角 色</a></li>
+            <li><a href="#">世 界</a></li>
+            <li><a href="#">漫 画</a></li>
+            <li><a href="#">社 区</a></li>
+            <li><a href="#">赛 事</a></li>
+            <li><a href="#">充值中心</a></li>
+        </ul>
+    </header>
+
+    <div class="main-content">
+        <div class="item">
+            <img src="./images/role/01.png" alt="01">
+            <span>林 簌</span>
+        </div>
+        <div class="item">
+            <img src="./images/role/02.png" alt="02">
+            <span>kinsen</span>
+        </div>
+        <div class="item">
+            <img src="./images/role/03.png" alt="03">
+            <span>小 N</span>
+        </div>
+        <div class="item">
+            <img src="./images/role/04.png" alt="04">
+            <span>莫 然</span>
+        </div>
+        <div class="item">
+            <img src="./images/role/05.png" alt="05">
+            <span>锦 鲤</span>
+        </div>
+    </div>
+</body>
+
+</html>
